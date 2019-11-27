@@ -1,0 +1,194 @@
+@import url('glitch.css');
+@import url('animate-world.css');
+@import url('navigation.css');
+@import url('footer.css');
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body
+{
+    height:100%;
+    width: 100%;
+    color: #000;
+    background-color: #98ff98;
+}
+/* background */
+.bgContainer
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bgContainer #object1
+{
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+}
+.bgContainer #object2
+{
+    position: absolute;
+    top: 5%;
+    left:25%;
+    width: 50vw;
+    height: 100vh;
+}
+.bgContainer h1
+{
+    position: absolute;
+    top:98%;
+    font-size: 150px;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -15px;
+    text-shadow: black 2px 5px 2px;
+}
+.content
+{
+    height: 400vh;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top:110%;
+    display: flex;
+}
+.content .container
+{
+    margin: auto;
+    width:100%;
+    height: 100%;
+}
+.content .container h1
+{
+    font-size: 100px;
+    position: relative;
+    top:40%;
+    color:#fff;
+    text-align:center;
+}
+.content .container .deforestation
+{
+    position: absolute;
+    top:40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    color: #fff;
+}
+.content .container .deforestation h1
+{
+    font-size: 50px;
+    color:#98ff98;
+    grid-column: 1/3;
+    text-shadow: 2px 2px 3px #000;
+}
+.content .container .deforestation #deforestation
+{
+    grid-column: 2/3;
+    height: 300px;
+    padding: 20px;
+    border-right: 2px solid #98ff98;
+}
+.content .container .deforestation p
+{
+    margin-right:20px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.content .container .calamity
+{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    position: absolute;
+    top:20%;
+}
+.content .container .calamity img
+{
+    height: 250px;
+    width: 350px;
+    margin:auto;
+    animation-name: glitch;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+.content .container .calamity img:nth-child(1)
+{
+    animation-delay: 0.1s;
+}
+.content .container .calamity img:nth-child(2)
+{
+    animation-delay: .3s;
+}
+.content .container .calamity img:nth-child(3)
+{
+    animation-delay: 0.2s;
+}
+.content .container .reforestation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+.content .container .reforestation img
+{
+    border-left: 5px solid #98ff98;
+    border-right: 5px solid #98ff98;
+    padding:50px;
+    width: 60%;
+    height:400px;
+}
+.content .container .reforestation  h1
+{
+    color: #98ff98;
+    font-size: 35px;
+    margin:20px;
+    text-align: left;
+}
+.content .world
+{
+    width: 100%;
+    position: absolute;
+    top: 65%;
+}
+.content .world p
+{
+    color:#fff;
+    text-align: center;
+    font-size: 35px;
+
+}
+.content .globe
+{
+    background-image: url('../res/globe.jpg');
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 100px 25px #000;
+    margin: auto;
+    animation: rotate 25s linear alternate infinite;
+}
+#currentPage
+{
+    color: #98ff98;
+    pointer-events: none;
+    cursor: default;
+}

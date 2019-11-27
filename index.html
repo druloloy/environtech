@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/scrollbar.css">
+    <title>EnvironTech</title>
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <div class="navigation">
+        <div class="logoContainer"><img src="res/logo.png" alt="EnvironTech"></div>     <!--logo-->
+
+        <div class="nav">   <!--MENU-->
+            <span id="showMenu" onclick="show()">&#9776;</span>
+            <span id="hideMenu" onclick="hide()">&times;</span>
+        </div>
+    </div>
+    <div id="modal" class="showNav">
+        <div class="menu">
+                <a href="index.html" id="currentPage">Home</a>
+                <a href="gadgets.html">Gadgets</a>
+                <a href="developers.html">Developers</a>
+                <a href="faq.htmlx">FAQs</a>
+        </div>
+    </div>
+
+    <!--CONTENT AND BACKGROUND-->
+    <div class="bgContainer">
+        <img class="scroll" id="object1" data-rate="0" src="res/landFill.png"/>
+        <img class="scroll" id="object2" data-rate="0.5" src="res/treeXXX.png"/>
+
+        <!--h1 class="scroll" id="object3" data-rate="-1">EnvironTech</h1>-->
+    </div>
+
+<div class="content">
+    <div class="container">
+        <h1 class="scroll" data-rate="-2">We. Need. You.</h1>
+        <div class="deforestation">
+            <img id="deforestation" class="scroll" data-rate="-1" src="res/deforestation.jpg" alt="Deforestation">
+            <p class="scroll" data-rate="-.9">The Earth loses 18.7 million acres of forests per year, which is equal to 27 soccer fields every minute, according to the World Wildlife Fund (WWF). It is estimated that 15 percent of all greenhouse gas emissions come from deforestation, according to the WWF.</p>
+            <h1 class="scroll" data-rate="-1.45">Deforestation</h1>
+        </div>
+        
+        <div class="calamity">
+            <img src="res/calamity.jpg" alt="Typhoon" class="scroll" >
+            <img src="res/landslide.jpg" alt="Landslide" class="scroll" >
+            <img src="res/globalWarming.jpg" alt="Global Warming" class="scroll" >
+        </div>
+
+        <h1 class="scroll" data-rate="-.3">Bring Our Forests Back.</h1>
+        <h1 class="scroll" data-rate="-.3">Rebuild Our Future.</h1>
+        <div class="reforestation">
+          <img data-rate="-1" src="res/treePlant1.jpg" alt="Tree Planting">
+            <h1 class="scroll" data-rate=".12">For every tree you plant,<br>A life can be saved.</h1>
+        </div>
+    </div>
+
+    <div class="world">
+        <p class="scroll" data-rate=".1">Make a better home for everyone.</p>
+        <div class="globe"></div>
+    </div>
+
+</div>
+<footer>
+  <div class="container">
+      <a href="index.html" id="currentPage">Home</a>
+      <a href="gadgets.html">Gadgets</a>
+      <a href="developers.html">Developers</a>
+      <a href="faq.html">FAQs</a>
+  </div>
+  <div class="logo">
+      <img src="res/logo.png" alt="EnvironTech">
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3x.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</body>
+</html>

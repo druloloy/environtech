@@ -1,0 +1,47 @@
+@keyframes glitch
+{
+    0%
+    {
+        filter: none;
+    }
+    20%
+    {
+        filter: none;
+    }
+    25%
+    {
+        filter: none;
+    }
+    28%
+    {
+        filter: invert();
+    }
+    30%
+    {
+        filter: none;
+    }
+    80%
+    {
+        filter:none;
+    }
+    83%
+    {
+        filter: invert();
+    }
+    85%
+    {
+        filter: none;
+    }
+    90%
+    {
+        filter: invert();
+    }
+    93%
+    {
+        filter: none;
+    }
+    100%
+    {
+        filter: none;
+    }
+}

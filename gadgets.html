@@ -5,29 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gadgets | EnvironTech</title>
+    <link rel="etech icon" href="res/icon.png" type="image/png">
 
+    <script src="js/jquery-3x.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style/reportBox.css">
     <link rel="stylesheet" href="style/gadgets.css">
 </head>
 <body>
-        <div class="navigation">
-                <div class="logoContainer"><img src="res/logo.png" alt="EnvironTech"></div>     <!--logo-->
+    <!---DO NOT DISPLAY-->
+ <div class="report">
+        <h2>Report a Problem</h2>
+            <div class="container">
+              <input type="text" name="name" placeholder="Name" id="name">
+              <input type="email" name="email" placeholder="E-mail" id="reporter-email">
+              <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                <div class="btnCtr">
+                        <button id="sendR">Send</button>
+                        <button id="cancelR">Cancel</button>
+                </div>
+            </div>
+      </div>
+      <a href="#" id="reportLink">Report a Problem?</a>
+      
+    <div class="navigation">
+            <a href="index.html"><div class="logoContainer"><img src="res/logo.png" alt="EnvironTech"></div> </a>    <!--logo-->
+    
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="gadgets.html" id="currentPage">Products</a>
+            <a href="developers.html">Developers</a>
+            <a href="faq.html">FAQs</a>
+        </div>
+    </div>
+
+    <div class="sliderContainer">
+        <div class="sliderBox">
+            <div class="slider">
+                <img id="prodImg" src="res/slider/airink.jpg" alt="Air Ink">
+                    <div class="description">
+                        <h2>Air Ink</h2>
+                        <p>An ink made out of pollution.</p>
+                    </div>
+            </div>
+            <div class="slider">
+                <img id="prodImg" src="res/slider/blob.jpg" alt="Blob">
+                <div class="description">
+                        <h2>Plastic or Nah?</h2>
+                        <p>Why use plastic water bottles if you can't eat them?</p>
+                    </div>
+            </div>
+            <div class="slider">
+                <img id="prodImg" src="res/slider/avanis.jpg" alt="Avani's">
+                <div class="description">
+                        <h2>Edible Plastic?</h2>
+                        <p>Not just edible but also drinkable.</p>
+                    </div>
+            </div>
+            <div class="slider">
+                <img id="prodImg" src="res/slider/seabin.jpg" alt="Sea Bin">
+                <div class="description">
+                        <h2>Sea Bin</h2>
+                        <p>I feed on your trash.</p>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div class="galleryContainer">
+        <h2>Products</h2>
+        <div class="productBox" id="airink" data-availability="true" data-price="1500" data-quantity="1" data-shipping-fee="150">
+            <div class="image-holder">
+                <img src="Website Tech/AIR-INK/c.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>Air Ink</h1>
+                            <p id="desc">
+                                    At the MIT Media Lab, we invented a device that captures air pollution. We turned this pollution into safe, high-quality ink for art.
+                                    While at the MIT Media Lab, we asked ourselves a simple question. How can we turn something as ugly as air pollution into something as useful as ink?
+                                    That’s how we came up with AIR-INK. 
+                                    Through this Kickstarter, we are offering AIR-INK for the first time––as safe, refillable, high-quality, water resistant markers and screen printing ink. By using 30ml of AIR-INK, you can negate 45 minutes worth of pollution.                                    
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                                <p>Creator: Graviky Lab</p>
+                                <p>Year: 2013</p>
+                            </div>  
+                        <div class="price-holder"><p>Price: &#8369;1,500</p></div>
+            </div>
+        </div>
+               <div class="productBox" id="biobag" data-availability="true" data-price="75" data-quantity="10" data-shipping-fee="150">
+            <div class="image-holder">
+                <img src="Website Tech/Avani_s Biodegradable Bags/b.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>Avani's Biodegradable Bag</h1>
+                            <p id="desc">
+                                    To show that the bags are completely safe for animal and human consumption, Avani founder put a piece of the bag inside a glass of water. He stirs it around and it dissolves easily. After that, he drinks the bag water casually and all is fine.     
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                                <p>Creator: Kevin Kumala, Daniel Rosenqvist</p>
+                                <p>Year: 2017</p>
+                            </div>  
+                        <div class="price-holder"><p>&#8369;75</p></div>
+            </div>
+        </div>
+               <div class="productBox" id="beerbottle" data-availability="false" data-price="0" data-quantity="0" data-shipping-fee="150">
+            <div class="image-holder">
+                <img src="Website Tech/DB Exports/b.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>Beer Bottle Sand</h1>
+                            <p id="desc">
+                                    DB Breweries has launched “Beer Bottle Sand”, an environmentally friendly campaign designed to encourage the recycling of glass beer bottles. In New Zealand, three out of every twelve beers sold end up in landfill. The Beer Bottle Sand project aims to keep recyclable glass out of landfill and sand on New Zealand’s beaches. 
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                                <p>Creator: DB Exports</p>
+                                <p>Year: 2017</p>
+                            </div>  
+                        <div id="noStock" class="price-holder"><p>Out of stock</p></div>
+            </div>
+        </div>
+               <div class="productBox" id="sixpackrings" data-availability="true" data-price="500" data-quantity="6" data-shipping-fee="150">
+            <div class="image-holder">
+                <img src="Website Tech/Edible Six-pack rings/a.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>Edible Six Pack Rings</h1>
+                            <p id="desc">
+                                    A small Florida-based brewery has released an edible and biodegradable six-pack holder in hopes of saving marine life and cutting down on the amount of plastic in the ocean.
+
+                                    Saltwater Brewery’s edible six-pack holder is made up of beer byproducts, like barley and wheat remnants, which are leftover from the brewing process. So if the rings end up in the ocean, it will safely disintegrate.                                    
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                                <p>Creator: Saltwater Brewery</p>
+                                <p>Year: 2016</p>
+                            </div>  
+                        <div class="price-holder"><p>&#8369;500</p></div>
+            </div>
+        </div>
+               <div class="productBox" id="waterblob" data-availability="true" data-price="100" data-quantity="50" data-shipping-fee="50">
+            <div class="image-holder">
+                <img src="Website Tech/Edible Water Blob/c.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>"Ooho" Edible Water Blob</h1>
+                            <p id="desc">
+                                The Ooho orb consists of water surrounded by a jelly-like membrane made of brown algae and calcium chloride. The squishy but strong gel-like container decomposes after four to six weeks if not consumed.
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                            <p>Creator: Rodrigo García González, Guillaume Couche and Pierre Paslier</p>
+                            <p>Year: 2014</p>
+                        </div>  
+                    <div class="price-holder">&#8369;100</div>
+            </div>
+        </div>
         
-                <div class="nav">   <!--MENU-->
-                    <span id="showMenu" onclick="show()">&#9776;</span>
-                    <span id="hideMenu" onclick="hide()">&times;</span>
+               <div class="productBox" id="seabin" data-availability="true" data-price="200000" data-quantity="1" data-shipping-fee="2500">
+            <div class="image-holder">
+                <img src="Website Tech/Sea Bin/Images/d.jpg">
+            </div>
+            <div class="content">
+                    <div class="description-holder">
+                            <h1>Sea Bin</h1>
+                            <p id="desc">
+                                    Through innovation, Seabins can now capture some of the smallest micro plastics, micro fibers and oil absorbent pads are able to absorb petroleum-based surface oils and detergent, all items that are predominant in most marinas around the world. Each day the design team are working towards making the Seabin technology “smarter”.
+                            </p>
+                        </div>
+                        <div class="creator-holder">
+                                <p>Creator: Andrew Turton and Pete Ceglinski</p>
+                                <p>Year: 2015</p>
+                            </div>   
+                    <div class="price-holder"><p>&#8369;200,000</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="showProduct">
+
+        <div class="product">
+            <span class="close">&times;</span>
+                <div class="imageContainer">
+                    <img id = "currentImage" src="">
+                </div>
+            <div class="description">
+                <h2 ID="name"></h2>
+                <p id="description"></p>
+                <p id="creator"></p>
+            </div>
+            <div class="buttons">
+                <div class="buy"><p>PRICE</p></div>
+                <div class="quantity">
+                    <p id="quan">Quantity</p>
+                    <div class="addminus">
+                            <p id="minus">-</p>
+                            <p id="add">+</p>
+                    </div>
                 </div>
             </div>
-            <div id="modal" class="showNav">
-                <div class="menu">
-                        <a href="index.html">Home</a>
-                        <a href="gadgets.html" id="currentPage">Gadgets</a>
-                        <a href="developers.html">Developers</a>
-                        <a href="faq.htmlx">FAQs</a>
+        </div>
+        
+    </div>
+    
+            <footer>
+                <div class="container">
+                    <a href="index.html">Home</a>
+                    <a href="gadgets.html" id="currentPage">Products</a>
+                    <a href="developers.html">Developers</a>
+                    <a href="faq.html">FAQs</a>
                 </div>
-            </div>
+                <div class="logo">
+                    <img src="res/logo.png" alt="EnvironTech">
+                  </div>
+              </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/jquery-3x.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/productSlider.js"></script>
+    <script src="js/showProducts.js"></script>
+    <script src="js/report.js"></script>
 </body>
 </html>

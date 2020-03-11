@@ -1,0 +1,191 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3x.js"></script>
+    <title>FAQS | EnvironTech</title>
+    <link rel="etech icon" href="res/icon.png" type="image/png">
+    
+    <link rel="stylesheet" href="style/FAQs.css">
+    <link rel="stylesheet" href="style/scrollbar.css">
+    <link rel="stylesheet" href="style/reportBox.css">
+</head>
+<body>
+  <!---DO NOT DISPLAY-->
+ <div class="report">
+    <h2>Report a Problem</h2>
+        <div class="container">
+          <input type="text" name="name" placeholder="Name" id="name">
+          <input type="email" name="email" placeholder="E-mail" id="reporter-email">
+          <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <div class="btnCtr">
+                    <button id="sendR">Send</button>
+                    <button id="cancelR">Cancel</button>
+            </div>
+        </div>
+  </div>
+    <div class="navigation">
+        <a href="index.html"><div class="logoContainer"><img src="res/logo.png" alt="EnvironTech"></div> </a>    <!--logo-->
+    
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="gadgets.html">Products</a>
+            <a href="developers.html">Developers</a>
+            <a href="faq.html" id="currentPage">FAQs</a>
+        </div>
+    </div>
+  <div class="container">
+      <h1>ENVIRONTECH FAQs</h1>
+    <!-- Accordion Starts-->
+    <div class="acc">
+      <h3>WHERE IS MY ORDER?</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+              Some orders may be sent in multiple parts, you will receive multiple dispatch emails if your order has been split shipped.
+              <ul>
+              <li>Day 0 - We have received your order</li>
+              <li>Day 1 - Your package is being prepared, after 3hrs it's all ready.</li>
+              <li>Day 2 - Your package is on its way, all you need to do is sit and wait for your package.</li>
+              <li>Day 3 - You have received your package, hope you enjoy the innovation within these products.</li>
+              </ul>
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>HOW CAN I PAY FOR MY ORDER?</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            We’ve got you covered! We accept the following payment methods:
+            <ul>
+              <li>Visa</li>
+              <li>Visa Debit</li>
+              <li>Solo</li> 
+              <li>Maestro</li>
+              <li>Electron</li>
+              <li>Paypal</li>
+              <li>Clearpay</li>
+            </ul>
+            You can be assured that shopping with Environtech is safe! We’re a member of "Verified by Visa" and "Secure by MasterCard", providing additional security when using your payment cards online. We use industry-standard encryption systems for potentially sensitive information, such as your name, address and other critically sensitive information like your credit / debit card details. Information passed between your computer and our website cannot be read in the event of someone else intercepting it.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>HOW DO I KNOW YOU HAVE RECEIVED MY ORDER?</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            Once you've placed your order, you will be directed to an order confirmation message which will contain your order number. This information will also be emailed to you; this can take up to 30 minutes to arrive in your inbox- so hold tight! Once our team at the warehouse have processed your order, you will receive a second email to let you know that your order is on its way to you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>WILL I RECEIVE A CONFIRMATION EMAIL WHEN I PLACE MY ORDER?</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            Once you have placed an order you will shortly receive a confirmation email. To ensure that this goes into your inbox please add; e-tech@gmail.com to your contacts, otherwise your confirmation email may end up in your Junk/Spam folder. If you have not received your order confirmation email please contact us
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion Starts-->
+    <div class="acc">
+      <h3>CAN I MAKE CHANGES TO MY ORDER? (E.G.ADDRESS)</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            As soon as you place your order, we’re on it – we know you need it fast! Unfortunately this means we will be unable to make any changes as it’s already being processed at the warehouse (literally within seconds!). You’ll need to place another order or return any unwanted items
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>CAN I CANCEL MY ORDER?  </h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            To make sure you receive your new ASAP, we'll start processing your order as soon as we receive it. This means that once your order has been placed, you will be unable to cancel or edit it.
+            If something additional is needed asap such as a new order for this particular unit and return the unwanted items back to us.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>WHAT SHOULD I DO IF I RECEIVE AN INCORRECT OR FAULTY ITEM? </h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>  
+            We're sorry to hear that you've received an incorrect or faulty item. So we can get this sorted for you, please drop us a message with the following info:
+            <ul>
+              <li>Your name</li>
+              <li>Your order number</li>
+              <li>Product name & code (this can be found on your order confirmation email)</li> 
+              <li>Picture of the fault / incorrect item</li>
+            </ul
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordian -->
+    <div class="acc">
+      <h3>CAN I EXCHANGE AN ITEM?</h3>
+      <div class="content">
+        <div class="content-inner">
+          <p>
+            Unfortunately we don't offer an exchange facility. Simply return your item(s) and reorder for a replacement. Your refund will be processed once we've received your unwanted items
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#" id="reportLink">Report a Problem?</a>
+
+
+
+
+  <footer>
+      <div class="container">
+          <a href="index.html">Home</a>
+          <a href="gadgets.html">Products</a>
+          <a href="developers.html">Developers</a>
+          <a href="faq.html" id="currentPage">FAQs</a>
+      </div>
+      <div class="logo">
+        <img src="res/logo.png" alt="EnvironTech">
+    </div>
+    </footer>
+<script>
+$(document).ready(function(){
+  $('.acc h3').click(function(){
+    $(this).next('.content').slideToggle();
+    $(this).parent().toggleClass('active');
+    $(this).parent().siblings().children('.content').slideUp();
+    $(this).parent().siblings().removeClass('active');
+  });
+});
+</script>
+    <script src="js/script.js"></script>
+    <script src="js/report.js"></script>
+  </body>
+  </html>

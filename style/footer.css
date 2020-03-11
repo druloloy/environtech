@@ -1,3 +1,9 @@
+footer #currentPage
+{
+    color: #98ff98;
+    pointer-events: none;
+    cursor: default;
+}
 footer
 {
     background-color:#000;
@@ -11,6 +17,7 @@ footer
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    border-top: 2px solid #555;
 }
 footer .container
 {
@@ -25,6 +32,11 @@ footer .container a
     font-size: 20px;
     margin: 25px;
     text-transform: uppercase;
+    transition: 300ms;
+}
+footer .container a:hover
+{
+    color: #555;
 }
 footer .logo
 {

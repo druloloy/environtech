@@ -1,0 +1,98 @@
+.report
+{
+    position: fixed;
+    left: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #111;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    transition: 300ms all ease-in-out;
+    z-index: 100;
+    margin: auto;
+}
+.report h2
+{
+    color: #98ff98;
+    text-align: center;
+    background: none;
+}
+.report .container
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    background:none;
+}
+.report .container input[type=text], input[type=email]
+{
+    background:none;
+    margin:10px;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 25px;
+    text-align: left;
+    outline:none;
+
+}
+.report .container textarea
+{
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    outline: none;
+}
+.report .container .btnCtr
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    margin: 20px auto;
+    background:none;
+}
+.report .container .btnCtr button
+{
+    flex: 1;
+    height: 45px;
+    background: none;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    transition: background 300ms ease-in-out;
+}
+.report .container .btnCtr #sendR:hover
+{
+    color: #000;
+    background: #98ff98;
+    border: none;
+}
+.report .container .btnCtr button:hover{
+    color: #aaa;
+    border: 2px #aaa solid;
+}
+#reportLink
+{
+    font-size: 20px;
+    color: #fff;
+    z-index: 100;
+    position: fixed;
+
+    margin: 20px 10px;
+    right: 0;
+    top:92%;
+}

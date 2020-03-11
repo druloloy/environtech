@@ -1,0 +1,164 @@
+@import url('navigation.css');
+@import url('footer.css');
+@import url('scrollbar.css');
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background: #f1f1f1;
+    font-family: 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navigation
+{
+    background: #100000;
+}
+.process-container
+{
+    width:100%;
+    margin:100px auto;
+}
+.container
+{
+    margin:auto;
+    padding: 30px;
+    width:80%;
+    background: #362023;
+    display: flex;
+}
+.container form
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.container form label
+{
+    color: #f1f1f1;
+    font-size:20px;
+    margin:5px;
+
+}
+.container form input[type=text], input[type=email], input[type=number]
+{
+    height:50px;
+    font-size: 20px;
+    padding: 10px;
+    margin:5px;
+}
+.container form button
+{
+    margin: 5px auto;
+    height:50px;
+    width: 100%;
+    background:none;
+    border: 2px solid #D0CFCF;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #D0CFCF;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+.container form button:hover
+{
+    color: #111;
+    border: none;
+    background:#D0CFCF;
+}
+.container .bill
+{
+    flex: 1;
+    background: #D0CFCF;
+    padding:20px;
+    font-size: 20px;
+}
+.container .bill table
+{
+    margin: auto;
+}
+.container .bill table td,th
+{
+    padding: 20px;
+}
+.container .greet
+{
+    color: #fff;
+    text-align: justify;
+    margin: 30px;
+}
+.container .greet p
+{
+    font-size: 20px;
+}
+.process
+{
+    width:80%;
+    margin:auto;
+    background: #700548;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+.process .step
+{
+    background: #D0CFCF;
+    width:100px;
+    height:100px;
+    display: flex;
+    border-radius: 100%;
+    color: #7899D4;
+}
+.process .step i
+{
+    color: #080705;
+    margin:auto;
+    font-size: 50px;
+}
+#currentStep
+{
+    background: #7272AB;
+}
+
+.navigation{
+    position: absolute;
+}
+.shipping .buttons{
+    display: flex;
+    flex-direction: column;
+}
+ .shipping button{
+    height: 50px;
+    width: 100%;
+    background: #362023;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.shipping button:hover{
+    background: #1f1315;
+}
+.shipping{
+    flex:1;
+    padding: 10px;
+    color: #362023;
+    margin:10px;
+    background-color: #aaa;
+}
+.shipping > div{
+    margin:50px;
+}
